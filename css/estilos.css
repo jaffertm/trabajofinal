@@ -1,0 +1,127 @@
+/* Paleta de colores */
+/* #333333
+#4b8a20
+#dddddd
+#e7123a. */
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4b8a20;
+    font-family: 'Tiro Tamil', serif;
+}
+
+#contenedor{
+    background-color:  #fff;
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1000px;
+}
+
+.menu{
+    list-style-type: none;
+    list-style: none;
+    background-color: rgb(16, 16, 16);
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    background-color: rgb(16, 16, 16);
+}
+.menu > li{
+    display: inline-block;
+}
+
+.menu li a:hover{
+    background: #333333 ;
+}
+
+.menu li ul{
+    position: absolute;
+    display: none;
+    width: 230px;
+    min-width: 140px;
+    list-style: none;
+}
+
+.menu li:hover >ul{
+    display: block;
+}
+
+article{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.contenido{
+    padding: 5px;
+    width: 500px;
+}
+
+table, th, td{
+    border: solid 1px #6da7e5;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.fila1{
+    background-color: rgba(78,168,191,255);
+}
+
+.fila2{
+    background-color: rgba(159,216,232,255);
+}
+
+.fila3{
+    background-color: rgba(208,245,253,255);
+}
+
+.fila4{
+    background-color: rgba(159,216,232,255);
+}
+
+.fila5{
+    background-color: rgba(208,245,253,255);
+}
+
+.fila6{
+    background-color: rgba(159,216,232,255);
+}
+
+table{
+    margin-left: 20px;
+    padding: 20px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.siguenos{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+h3{
+    margin-top: 50px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.siguenos a{
+    padding: 5px;
+}
+
+tr{
+  
+}
