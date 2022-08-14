@@ -18,12 +18,14 @@ body{
 
 #contenedor{
     background-color:  #fff;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    width: 80%;
+    margin: auto;
     max-width: 900px;
-    margin-bottom: 20px;
+}
+
+header img{
+    width: 100%;
+    max-width: 900px;
 }
 
 .menu{
@@ -95,7 +97,6 @@ table, th, td{
 }
 
 table{
-    margin-left: 20px;
     padding: 20px;
 }
 
@@ -104,8 +105,7 @@ th, td{
 }
 
 .siguenos{
-    padding: 10px;
-    margin-left: 20px;
+    width: 50px;
 }
 
 h3{
@@ -118,37 +118,151 @@ h3{
     padding: 5px;
 }
 
-main{
-    padding: 5px;
-    width: 55%;
-    height: 100%;
-    float: left;
-    background-color: #fff;
+.contenido{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    max-width: 900px;
+    gap: 9%;
 }
 
-aside{
-    float: right;
-    width: 43%;
-    height: 100%;
-    background-color: #fff;
-    padding: 4px;
+.ter{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 p{
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-
-.contenido{
-    background-color: #fff;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
 }
 
 .recomendados img{
-    width: 200px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
 }
 
 .recomendados {
     display: flex;
-    margin: 20px 0;
+    justify-content: flex-start;
+}
+
+span{
+    padding: 17px;
+    text-align: center;
+}
+
+.escribenos{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.escribe{
+    font-size: 30px;
+}
+.text input{
+    width: 96%;
+    height: 30px;
+}
+textarea{
+    width: 97%;
+    height: 90px;
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+}
+fieldset{
+    background-color: #dddddd;
+}
+
+.enviar input{
+    background-color: #4b8a20;
+    color: #fff;
+    width: 50px;
+    margin: 10px;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    color: white;
+}
+.final{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    gap: 3%;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.subir a{
+    text-decoration: none;
+    background-color: #918e8e;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tit{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1150px){
+    .contenido{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        max-width: 900px;
+        gap: 9%;
+    }
+    main img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .siguenos{
+        width: 100%;
+        display: flex;
+    }
+}
+@media screen and (max-width: 750px){
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .final{
+        display: grid;
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        font-size: 11px;
+        grid-template-columns: 15% 15% 15% 15% 15%;
+        gap: 3%;
+        margin: auto;
+        padding: 10px;
+    }
+    main img{
+        width: 100%;
+    }
+    .subir a{
+        font: 11px;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .contenido{
+        width: 100%;
+        display: block;
+    }
+    table{
+        width: 100%;
+        max-width: 900px;
+    }
 }
